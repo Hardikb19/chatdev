@@ -2,6 +2,10 @@
 
 A Basic Chat Bot to return score updates, weather updates, etc.
 
+### **Current Build**
+
+![Screenshot](https://raw.githubusercontent.com/Hardikb19/chatdev/master/flutter_01.png)
+
 ## To Do:
 
 - Add more default APIs
