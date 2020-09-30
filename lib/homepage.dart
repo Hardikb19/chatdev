@@ -6,7 +6,7 @@ class BotHome extends StatefulWidget {
   _BotHomeState createState() => _BotHomeState();
 }
 
-class _BotHomeState extends State<BotHome>  with SingleTickerProviderStateMixin {
+class _BotHomeState extends State<BotHome> with SingleTickerProviderStateMixin {
   TabController _tabController;
   bool showFab = true;
 
@@ -28,10 +28,13 @@ class _BotHomeState extends State<BotHome>  with SingleTickerProviderStateMixin 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Container(height: 10.0,child:ImageIcon(
-          AssetImage('logogreen.png'),
-          size: 1.0,
-        ),),
+        leading: Container(
+          height: 10.0,
+          child: ImageIcon(
+            AssetImage('logogreen.png'),
+            size: 1.0,
+          ),
+        ),
         title: Text("Har-Bot"),
         elevation: 0.7,
         bottom: TabBar(
@@ -40,9 +43,14 @@ class _BotHomeState extends State<BotHome>  with SingleTickerProviderStateMixin 
           tabs: <Widget>[
             Tab(
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children:<Widget>[Icon(Icons.details),Container(child:Text("Bots"),margin: EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),),]
-                ),
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Icon(Icons.details),
+                    Container(
+                      child: Text("Bots"),
+                      margin: EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
+                    ),
+                  ]),
               key: Key("BOTS"),
             ),
           ],
@@ -64,7 +72,7 @@ class _BotHomeState extends State<BotHome>  with SingleTickerProviderStateMixin 
               backgroundColor: Theme.of(context).accentColor,
               child: Icon(
                 Icons.message,
-                color: Colors.white,
+                color: Colors.blueAccent,
               ),
               onPressed: () => print("open chats"),
             )
